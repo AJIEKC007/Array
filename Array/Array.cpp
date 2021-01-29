@@ -4,15 +4,27 @@ using namespace std;
 
 int main()
 {
-	int arr[4]={ 1,2,3,4 };
+	int const s = 5;
+	int arr[s];
 	int sum=0;
-	for (int i = 0; i < 4; i++)
+	int x;
+
+	for (int i = 0; i < s; i++)
+	{
+		cout << "Vvedite chislo : ";
+		cin >> x;
+		arr[i] = x;
+		
+	}
+	cout << endl;
+
+	for (int i = 0; i < s; i++)
 	{
 
 		cout << arr[i] << " ";
 	}
 	cout << endl;
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < s; i++)
 	{
 		sum += arr[i];
 	
